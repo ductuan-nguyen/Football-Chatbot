@@ -1,0 +1,1414 @@
+version: "2.0"
+
+nlu:
+  - lookup: player_name
+    examples: |
+      - Mesut Özil
+      - Özil
+      - Sokratis Papastathopoulos
+      - Sokratis
+      - David Luiz Moreira Marinho
+      - David Luiz
+      - Pierre-Emerick Aubameyang
+      - Aubameyang
+      - Cédric Soares
+      - Cédric
+      - Alexandre Lacazette
+      - Lacazette
+      - Shkodran Mustafi
+      - Mustafi
+      - Bernd Leno
+      - Leno
+      - Granit Xhaka
+      - Xhaka
+      - Pablo Marí
+      - Marí
+      - Héctor Bellerín
+      - Bellerín
+      - Calum Chambers
+      - Chambers
+      - Sead Kolasinac
+      - Kolasinac
+      - Rob Holding
+      - Holding
+      - Kieran Tierney
+      - Tierney
+      - Nicolas Pépé
+      - Pépé
+      - Lucas Torreira
+      - Torreira
+      - Reiss Nelson
+      - Nelson
+      - Edward Nketiah
+      - Nketiah
+      - Emile Smith Rowe
+      - Smith Rowe
+      - Bukayo Saka
+      - Saka
+      - Matteo Guendouzi
+      - Guendouzi
+      - Gabriel Teodoro Martinelli Silva
+      - Martinelli
+      - William Saliba
+      - Saliba
+      - Mathew Ryan
+      - Ryan
+      - Willian Borges Da Silva
+      - Willian
+      - Gabriel Magalhães
+      - Gabriel
+      - Daniel Ceballos Fernández
+      - Ceballos
+      - Mohamed Naser El Sayed Elneny
+      - Elneny
+      - Matt Macey
+      - Macey
+      - Rúnar Alex Rúnarsson
+      - Rúnarsson
+      - Thomas Partey
+      - Partey
+      - Martin Ødegaard
+      - Ødegaard
+      - Miguel Azeez
+      - Azeez
+      - Emiliano Martínez
+      - Martínez
+      - Tom Heaton
+      - Heaton
+      - Ahmed El Mohamady
+      - El Mohamady
+      - Henri Lansbury
+      - Lansbury
+      - Neil Taylor
+      - Taylor
+      - Jed Steer
+      - Steer
+      - Conor Hourihane
+      - Hourihane
+      - José Ignacio Peleteiro Romallo
+      - Jota
+      - Ørjan Nyland
+      - Nyland
+      - Bjorn Engels
+      - Engels
+      - Jack Grealish
+      - Grealish
+      - John McGinn
+      - McGinn
+      - Kortney Hause
+      - Hause
+      - Mahmoud Ahmed Ibrahim Hassan
+      - Trézéguet
+      - Tyrone Mings
+      - Mings
+      - Matt Targett
+      - Targett
+      - James Bree
+      - Bree
+      - Marvelous Nakamba
+      - Nakamba
+      - Anwar El Ghazi
+      - El Ghazi
+      - Ezri Konsa Ngoyo
+      - Konsa
+      - Frédéric Guilbert
+      - Guilbert
+      - Wesley Moraes
+      - Wesley
+      - Mbwana Samatta
+      - Samatta
+      - Keinan Davis
+      - Davis
+      - Indiana Vassilev
+      - Vassilev
+      - Douglas Luiz Soares de Paulo
+      - Douglas Luiz
+      - Ross Barkley
+      - Barkley
+      - Matthew Cash
+      - Cash
+      - Ollie Watkins
+      - Watkins
+      - Bertrand Traoré
+      - Traoré
+      - Jacob Ramsey
+      - Ramsey
+      - Morgan Sanson
+      - Sanson
+      - Kaine Hayden
+      - Hayden
+      - Carney Chukwuemeka
+      - Chukwuemeka
+      - Jaden Philogene-Bidace
+      - Philogene-Bidace
+      - Glenn Murray
+      - Murray
+      - Adam Lallana
+      - Lallana
+      - Pascal Groß
+      - Groß
+      - Shane Duffy
+      - Duffy
+      - Davy Pröpper
+      - Pröpper
+      - Aaron Mooy
+      - Mooy
+      - Dan Burn
+      - Burn
+      - Lewis Dunk
+      - Dunk
+      - Martín Montoya
+      - Montoya
+      - Florin Andone
+      - Andone
+      - Solomon March
+      - March
+      - Adam Webster
+      - Webster
+      - Joël Veltman
+      - Veltman
+      - Neal Maupay
+      - Maupay
+      - Leandro Trossard
+      - Trossard
+      - Alireza Jahanbakhsh
+      - Jahanbakhsh
+      - José Izquierdo
+      - Izquierdo
+      - Matthew Clarke
+      - Clarke
+      - Ben White
+      - White
+      - Bernardo Fernandes da Silva Junior
+      - Bernardo
+      - Yves Bissouma
+      - Bissouma
+      - Tariq Lamptey
+      - Lamptey
+      - Aaron Connolly
+      - Connolly
+      - Steven Alzate
+      - Alzate
+      - Alexis Mac Allister
+      - Mac Allister
+      - Christian Walton
+      - Walton
+      - Jason Steele
+      - Steele
+      - Jayson Molumby
+      - Molumby
+      - Andi Zeqiri
+      - Zeqiri
+      - Danny Welbeck
+      - Welbeck
+      - Robert Sánchez
+      - Sánchez
+      - Percy Tau
+      - Tau
+      - Jakub Moder
+      - Moder
+      - Reda Khadra
+      - Khadra
+      - Teddy Jenks
+      - Jenks
+      - Max Sanders
+      - Sanders
+      - Jensen Weir
+      - Weir
+      - Thomas McGill
+      - McGill
+      - Michal Karbownik
+      - Karbownik
+      - Moisés Caicedo
+      - Caicedo
+      - Dale Stephens
+      - Stephens
+      - James Tarkowski
+      - Tarkowski
+      - Phil Bardsley
+      - Bardsley
+      - Erik Pieters
+      - Pieters
+      - Jack Cork
+      - Cork
+      - Kevin Long
+      - Long
+      - Jay Rodriguez
+      - Rodriguez
+      - Ashley Barnes
+      - Barnes
+      - Ben Mee
+      - Mee
+      - Ashley Westwood
+      - Westwood
+      - Johann Berg Gudmundsson
+      - Gudmundsson
+      - Chris Wood
+      - Wood
+      - Matthew Lowton
+      - Lowton
+      - Matej Vydra
+      - Vydra
+      - Ben Gibson
+      - Gibson
+      - Robbie Brady
+      - Brady
+      - Nick Pope
+      - Pope
+      - Charlie Taylor
+      - Taylor
+      - Josh Brownhill
+      - Brownhill
+      - Bailey Peacock-Farrell
+      - Peacock-Farrell
+      - Dwight McNeil
+      - McNeil
+      - Jimmy Dunne
+      - Dunne
+      - Bobby Thomas
+      - Thomas
+      - Josh Benson
+      - Benson
+      - Anthony Driscoll-Glennon
+      - Driscoll-Glennon
+      - Mace Goodridge
+      - Goodridge
+      - Will Norris
+      - Norris
+      - Max Thompson
+      - Thompson
+      - Lewis Richardson
+      - Richardson
+      - Anthony Mancini
+      - Mancini
+      - Joel Mumbongo
+      - Mumbongo
+      - Richard Nartey
+      - Nartey
+      - Willy Caballero
+      - Caballero
+      - César Azpilicueta
+      - Azpilicueta
+      - Olivier Giroud
+      - Giroud
+      - Marcos Alonso
+      - Alonso
+      - Jorge Luiz Frello Filho
+      - Jorginho
+      - Mateo Kovacic
+      - Kovacic
+      - Antonio Rüdiger
+      - Rüdiger
+      - Kurt Zouma
+      - Zouma
+      - Emerson Palmieri dos Santos
+      - Emerson
+      - Kepa Arrizabalaga
+      - Arrizabalaga
+      - N'Golo Kanté
+      - Kanté
+      - Hakim Ziyech
+      - Ziyech
+      - Andreas Christensen
+      - Christensen
+      - Timo Werner
+      - Werner
+      - Tammy Abraham
+      - Abraham
+      - Christian Pulisic
+      - Pulisic
+      - Mason Mount
+      - Mount
+      - Fikayo Tomori
+      - Tomori
+      - Callum Hudson-Odoi
+      - Hudson-Odoi
+      - Reece James
+      - James
+      - Billy Gilmour
+      - Gilmour
+      - Benjamin Chilwell
+      - Chilwell
+      - Thiago Thiago
+      - Thiago Silva
+      - Kai Havertz
+      - Havertz
+      - Edouard Mendy
+      - Mendy
+      - Karlo Ziger
+      - Ziger
+      - Faustino Anjorin
+      - Anjorin
+      - Valentino Livramento
+      - Livramento
+      - Michy Batshuayi
+      - Batshuayi
+      - Gary Cahill
+      - Cahill
+      - Wayne Hennessey
+      - Hennessey
+      - Mamadou Sakho
+      - Sakho
+      - Vicente Guaita
+      - Guaita
+      - James Tomkins
+      - Tomkins
+      - James McArthur
+      - McArthur
+      - James McCarthy
+      - McCarthy
+      - Christian Benteke
+      - Benteke
+      - Cheikhou Kouyaté
+      - Kouyaté
+      - Joel Ward
+      - Ward
+      - Martin Kelly
+      - Kelly
+      - Connor Wickham
+      - Wickham
+      - Andros Townsend
+      - Townsend
+      - Luka Milivojevic
+      - Milivojevic
+      - Patrick van Aanholt
+      - van Aanholt
+      - Jordan Ayew
+      - Ayew
+      - Wilfried Zaha
+      - Zaha
+      - Jeffrey Schlupp
+      - Schlupp
+      - Max Meyer
+      - Meyer
+      - Jairo Riedewald
+      - Riedewald
+      - Nathan Ferguson
+      - Ferguson
+      - Tyrick Mitchell
+      - Mitchell
+      - Brandon Pierrick
+      - Pierrick
+      - Scott Dann
+      - Dann
+      - Eberechi Eze
+      - Eze
+      - Sam Woods
+      - Woods
+      - Ryan Inniss
+      - Inniss
+      - Nathaniel Clyne
+      - Clyne
+      - Stephen Henderson
+      - Henderson
+      - Jack Butland
+      - Butland
+      - Jean-Philippe Mateta
+      - Mateta
+      - Reece Hannam
+      - Hannam
+      - Jesurun Rak-Sakyi
+      - Rak-Sakyi
+      - Fabian Delph
+      - Delph
+      - Gylfi Sigurdsson
+      - Sigurdsson
+      - Jonas Lössl
+      - Lössl
+      - Seamus Coleman
+      - Coleman
+      - Cenk Tosun
+      - Tosun
+      - Bernard Anício Caldeira Duarte
+      - Bernard
+      - Lucas Digne
+      - Digne
+      - Michael Keane
+      - Keane
+      - Jordan Pickford
+      - Pickford
+      - André Filipe Tavares Gomes
+      - André Gomes
+      - Alex Iwobi
+      - Iwobi
+      - Jonjoe Kenny
+      - Kenny
+      - Jean-Philippe Gbamin
+      - Gbamin
+      - Yerry Mina
+      - Mina
+      - Tom Davies
+      - Davies
+      - Dominic Calvert-Lewin
+      - Calvert-Lewin
+      - Mason Holgate
+      - Holgate
+      - Richarlison de Andrade
+      - Richarlison
+      - João Virgínia
+      - Virgínia
+      - Anthony Gordon
+      - Gordon
+      - Moise Kean
+      - Kean
+      - Jarrad Branthwaite
+      - Branthwaite
+      - Allan Marques Loureiro
+      - Allan
+      - James Rodríguez
+      - Rodríguez
+      - Abdoulaye Doucouré
+      - Doucouré
+      - Niels Nkounkou
+      - Nkounkou
+      - Ben Godfrey
+      - Godfrey
+      - Robin Olsen
+      - Olsen
+      - Ellis Simms
+      - Simms
+      - Tyler Onyango
+      - Onyango
+      - Joshua King
+      - King
+      - Kyle John
+      - John
+      - Nathan Broadhead
+      - Broadhead
+      - Ryan Astley
+      - Astley
+      - Harry Tyrer
+      - Tyrer
+      - Reece Welch
+      - Welch
+      - Isaac Price
+      - Price
+      - Ruben Loftus-Cheek
+      - Loftus-Cheek
+      - Fabricio Agosto Ramírez
+      - Fabri
+      - Kevin McDonald
+      - McDonald
+      - Maxime Le Marchand
+      - Le Marchand
+      - Stefan Johansen
+      - Johansen
+      - Tom Cairney
+      - Cairney
+      - Tim Ream
+      - Ream
+      - Anthony Knockaert
+      - Knockaert
+      - Michael Hector
+      - Hector
+      - Cyrus Christie
+      - Christie
+      - Neeskens Kebano
+      - Kebano
+      - Bobby Decordova-Reid
+      - Decordova-Reid
+      - Joe Bryan
+      - Bryan
+      - Marcus Bettinelli
+      - Bettinelli
+      - Aleksandar Mitrović
+      - Mitrović
+      - Alfie Mawson
+      - Mawson
+      - Marek Rodák
+      - Rodák
+      - Ivan Ricardo Neves Abreu Cavaleiro
+      - Cavaleiro
+      - Josh Onomah
+      - Onomah
+      - Jean Michaël Seri
+      - Seri
+      - Aboubakar Kamara
+      - Kamara
+      - André-Frank Zambo Anguissa
+      - Anguissa
+      - Zeze Steven Sessegnon
+      - Sessegnon
+      - Harrison Reed
+      - Reed
+      - Antonee Robinson
+      - Robinson
+      - Mario Lemina
+      - Lemina
+      - Alphonse Areola
+      - Areola
+      - Kenny Tete
+      - Tete
+      - Denis Odoi
+      - Odoi
+      - Ademola Lookman
+      - Lookman
+      - Ola Aina
+      - Aina
+      - Joachim Andersen
+      - Andersen
+      - Tosin Adarabioyo
+      - Adarabioyo
+      - Terence Kongolo
+      - Kongolo
+      - Josh Maja
+      - Maja
+      - Fabio Carvalho
+      - Carvalho
+      - Wes Morgan
+      - Morgan
+      - Kasper Schmeichel
+      - Schmeichel
+      - Christian Fuchs
+      - Fuchs
+      - Jonny Evans
+      - Evans
+      - Adrien Silva
+      - Silva
+      - Marc Albrighton
+      - Albrighton
+      - Matty James
+      - James
+      - Danny Ward
+      - Ward
+      - Jamie Vardy
+      - Vardy
+      - Dennis Praet
+      - Praet
+      - Ricardo Domingos Barbosa Pereira
+      - Pereira
+      - Daniel Amartey
+      - Amartey
+      - Youri Tielemans
+      - Tielemans
+      - Ayoze Pérez
+      - Pérez
+      - Demarai Gray
+      - Gray
+      - James Maddison
+      - Maddison
+      - Kelechi Iheanacho
+      - Iheanacho
+      - Hamza Choudhury
+      - Choudhury
+      - Harvey Barnes
+      - Barnes
+      - Wilfred Ndidi
+      - Ndidi
+      - Filip Benkovic
+      - Benkovic
+      - Çaglar Söyüncü
+      - Söyüncü
+      - James Justin
+      - Justin
+      - Luke Thomas
+      - Thomas
+      - Timothy Castagne
+      - Castagne
+      - Nampalys Mendy
+      - Mendy
+      - Cengiz Ünder
+      - Ünder
+      - Wesley Fofana
+      - Fofana
+      - Islam Slimani
+      - Slimani
+      - Vontae Daley-Campbell
+      - Daley-Campbell
+      - Thakgalo Leshabela
+      - Leshabela
+      - Sidnei Tavares
+      - Tavares
+      - Shane Flynn
+      - Flynn
+      - Thanawat Suengchitthawon
+      - Suengchitthawon
+      - Tawanda Maswanhise
+      - Maswanhise
+      - Pablo Hernández Domínguez
+      - Hernández
+      - Francisco Casilla Cortés
+      - Casilla
+      - Liam Cooper
+      - Cooper
+      - Barry Douglas
+      - Douglas
+      - Luke Ayling
+      - Ayling
+      - Mateusz Klich
+      - Klich
+      - Adam Forshaw
+      - Forshaw
+      - Stuart Dallas
+      - Dallas
+      - Ezgjan Alioski
+      - Alioski
+      - Patrick Bamford
+      - Bamford
+      - Jack Harrison
+      - Harrison
+      - Kalvin Phillips
+      - Phillips
+      - Hélder Wander Sousa de Azevedo e Costa
+      - Costa
+      - Tyler Roberts
+      - Roberts
+      - Jay-Roy Grot
+      - Grot
+      - Kamil Miazek
+      - Miazek
+      - Ian Carlo Poveda-Ocampo
+      - Poveda-Ocampo
+      - Jamie Shackleton
+      - Shackleton
+      - Pascal Struijk
+      - Struijk
+      - Jordan Stevens
+      - Stevens
+      - Illan Meslier
+      - Meslier
+      - Leif Davis
+      - Davis
+      - Oliver Casey
+      - Casey
+      - Robin Koch
+      - Koch
+      - Rodrigo Moreno
+      - Rodrigo
+      - Elia Caprile
+      - Caprile
+      - Mateusz Bogusz
+      - Bogusz
+      - Diego Llorente
+      - Llorente
+      - Raphael Dias Belloli
+      - Raphinha
+      - Jack Jenkins
+      - Jenkins
+      - Niall Huggins
+      - Huggins
+      - Charlie Cresswell
+      - Cresswell
+      - Joe Gelhardt
+      - Gelhardt
+      - Gaetano Berardi
+      - Berardi
+      - Sam Greenwood
+      - Greenwood
+      - Crysencio Summerville
+      - Summerville
+      - Cody Drameh
+      - Drameh
+      - James Milner
+      - Milner
+      - Konstantinos Tsimikas
+      - Tsimikas
+      - Georginio Wijnaldum
+      - Wijnaldum
+      - Jordan Henderson
+      - Henderson
+      - Adrián San Miguel del Castillo
+      - Adrián
+      - Joel Matip
+      - Matip
+      - Xherdan Shaqiri
+      - Shaqiri
+      - Alex Oxlade-Chamberlain
+      - Chamberlain
+      - Roberto Firmino
+      - Firmino
+      - Virgil van Dijk
+      - van Dijk
+      - Sadio Mané
+      - Mané
+      - Alisson Ramses Becker
+      - Alisson
+      - Fabio Henrique Tavares
+      - Fabinho
+      - Mohamed Salah
+      - Salah
+      - Andrew Robertson
+      - Robertson
+      - Divock Origi
+      - Origi
+      - Harry Wilson
+      - Harry Wilson
+      - Trent Alexander-Arnold
+      - Alexander-Arnold
+      - Joseph Gomez
+      - Gomez
+      - Naby Keita
+      - Keita
+      - Curtis Jones
+      - Jones
+      - Neco Williams
+      - Neco Williams
+      - Harvey Elliott
+      - Elliott
+      - Diogo Jota
+      - Jota
+      - Thiago Alcántara do Nascimento
+      - Thiago
+      - Caoimhin Kelleher
+      - Kelleher
+      - Nathaniel Phillips
+      - Phillips
+      - Rhys Williams
+      - Rhys Williams
+      - Leighton Clarkson
+      - Clarkson
+      - Jake Cain
+      - Cain
+      - Ozan Kabak
+      - Kabak
+      - Ben Davies
+      - Davies
+      - Liam Hughes
+      - Hughes
+      - Jakub Ojrzynski
+      - Ojrzynski
+      - Ben Woodburn
+      - Woodburn
+      - Billy Koumetio
+      - Koumetio
+      - Fernando Luiz Rosa
+      - Fernandinho
+      - Claudio Bravo
+      - Bravo
+      - Sergio Agüero
+      - Agüero
+      - Nicolás Otamendi
+      - Otamendi
+      - Kyle Walker
+      - Walker
+      - Ilkay Gündogan
+      - Gündogan
+      - Kevin De Bruyne
+      - De Bruyne
+      - John Stones
+      - Stones
+      - Benjamin Mendy
+      - Mendy
+      - Riyad Mahrez
+      - Mahrez
+      - Raheem Sterling
+      - Sterling
+      - João Pedro Cavaco Cancelo
+      - Cancelo
+      - Ederson Santana de Moraes
+      - Ederson
+      - Nathan Aké
+      - Aké
+      - Aymeric Laporte
+      - Laporte
+      - Bernardo Mota Veiga de Carvalho e Silva
+      - Bernardo Silva
+      - Gabriel Fernando de Jesus
+      - Jesus
+      - Oleksandr Zinchenko
+      - Zinchenko
+      - Phil Foden
+      - Foden
+      - Tommy Doyle
+      - Doyle
+      - Rodrigo Hernandez
+      - Rodrigo
+      - Ferran Torres
+      - Torres
+      - Eric Garcia
+      - Garcia
+      - Adrián Bernabé
+      - Bernabé
+      - Zack Steffen
+      - Steffen
+      - Liam Delap
+      - Delap
+      - Cole Palmer
+      - Palmer
+      - Rúben Santos Gato Alves Dias
+      - Dias
+      - James Trafford
+      - Trafford
+      - Scott Carson
+      - Carson
+      - Felix Nmecha
+      - Nmecha
+      - Luke Mbete
+      - Mbete
+      - Taylor Harwood-Bellis
+      - Harwood-Bellis
+      - Claudio Gomes
+      - Gomes
+      - Sergio Romero
+      - Romero
+      - Juan Mata
+      - Mata
+      - David de Gea
+      - de Gea
+      - Chris Smalling
+      - Smalling
+      - Odion Ighalo
+      - Ighalo
+      - Marcos Rojo
+      - Rojo
+      - Nemanja Matic
+      - Matic
+      - Paul Pogba
+      - Pogba
+      - Phil Jones
+      - Jones
+      - Harry Maguire
+      - Maguire
+      - Frederico Rodrigues de Paula Santos
+      - Fred
+      - Luke Shaw
+      - Shaw
+      - Bruno Miguel Borges Fernandes
+      - Fernandes
+      - Anthony Martial
+      - Martial
+      - Andreas Pereira
+      - Pereira
+      - Dean Henderson
+      - Henderson
+      - Marcus Rashford
+      - Rashford
+      - Axel Tuanzebe
+      - Tuanzebe
+      - Victor Lindelöf
+      - Lindelöf
+      - Scott McTominay
+      - McTominay
+      - Eric Bailly
+      - Bailly
+      - Daniel James
+      - James
+      - Timothy Fosu-Mensah
+      - Fosu-Mensah
+      - Aaron Wan-Bissaka
+      - Wan-Bissaka
+      - José Diogo Dalot Teixeira
+      - Dalot
+      - Mason Greenwood
+      - Greenwood
+      - Tahith Chong
+      - Chong
+      - James Garner
+      - Garner
+      - Brandon Williams
+      - Williams
+      - Teden Mengi
+      - Mengi
+      - Donny van de Beek
+      - van de Beek
+      - Alex Nicolao Telles
+      - Telles
+      - Edinson Cavani
+      - Cavani
+      - Facundo Pellistri
+      - Pellistri
+      - Lee Grant
+      - Grant
+      - Amad Diallo
+      - Diallo
+      - Shola Shoretire
+      - Shoretire
+      - Nathan Bishop
+      - Bishop
+      - Anthony Elanga
+      - Elanga
+      - Joseph Willock
+      - Willock
+      - Andy Carroll
+      - Carroll
+      - Jonjo Shelvey
+      - Shelvey
+      - Matt Ritchie
+      - Ritchie
+      - Federico Fernández
+      - Fernández
+      - Ciaran Clark
+      - Clark
+      - Karl Darlow
+      - Darlow
+      - Martin Dubravka
+      - Dubravka
+      - Florian Lejeune
+      - Lejeune
+      - Jamaal Lascelles
+      - Lascelles
+      - Dwight Gayle
+      - Gayle
+      - Christian Atsu
+      - Atsu
+      - Paul Dummett
+      - Dummett
+      - Javier Manquillo
+      - Manquillo
+      - Emil Krafth
+      - Krafth
+      - Fabian Schär
+      - Schär
+      - DeAndre Yedlin
+      - Yedlin
+      - Isaac Hayden
+      - Hayden
+      - Rolando Aarons
+      - Aarons
+      - Allan Saint-Maximin
+      - Saint-Maximin
+      - Miguel Almirón
+      - Almirón
+      - Joelinton Cássio Apolinário de Lira
+      - Joelinton
+      - Yoshinori Muto
+      - Muto
+      - Kelland Watts
+      - Watts
+      - Sean Longstaff
+      - Sean Longstaff
+      - Jeff Hendrick
+      - Hendrick
+      - Matthew Longstaff
+      - Matty Longstaff
+      - Mark Gillespie
+      - Gillespie
+      - Jacob Murphy
+      - Murphy
+      - Callum Wilson
+      - Wilson
+      - Ryan Fraser
+      - Fraser
+      - Jamal Lewis
+      - Lewis
+      - Elliot Anderson
+      - Anderson
+      - Daniel Langley
+      - Langley
+      - Rhian Brewster
+      - Brewster
+      - Billy Sharp
+      - Sharp
+      - David McGoldrick
+      - McGoldrick
+      - Chris Basham
+      - Basham
+      - John Fleck
+      - Fleck
+      - Enda Stevens
+      - Stevens
+      - Simon Moore
+      - Moore
+      - Oliver Norwood
+      - Norwood
+      - Wes Foderingham
+      - Foderingham
+      - George Baldock
+      - Baldock
+      - Jack Robinson
+      - Jack Robinson
+      - John Egan
+      - Egan
+      - Jack O'Connell
+      - O'Connell
+      - John Lundstram
+      - Lundstram
+      - Ben Osborn
+      - Osborn
+      - Oliver McBurnie
+      - McBurnie
+      - Lys Mousset
+      - Mousset
+      - Sander Berge
+      - Berge
+      - Oliver Burke
+      - Burke
+      - Luke Freeman
+      - Freeman
+      - Aaron Ramsdale
+      - Ramsdale
+      - Ethan Ampadu
+      - Ampadu
+      - Jayden Bogle
+      - Bogle
+      - Max Lowe
+      - Lowe
+      - Phil Jagielka
+      - Jagielka
+      - Michael Verrips
+      - Verrips
+      - Kean Bryan
+      - Bryan
+      - Antwoine Hackford
+      - Hackford
+      - Kyron Gordon
+      - Gordon
+      - Iliman Ndiaye
+      - Ndiaye
+      - Zak Brunt
+      - Brunt
+      - Frankie Maguire
+      - Maguire
+      - Daniel Jebbison
+      - Jebbison
+      - Theo Walcott
+      - Walcott
+      - Takumi Minamino
+      - Minamino
+      - Shane Long
+      - Long
+      - Ryan Bertrand
+      - Bertrand
+      - Alex McCarthy
+      - McCarthy
+      - Oriol Romeu Vidal
+      - Oriol Romeu
+      - Nathan Redmond
+      - Redmond
+      - Danny Ings
+      - Ings
+      - Jack Stephens
+      - Stephens
+      - Stuart Armstrong
+      - Armstrong
+      - Jannik Vestergaard
+      - Vestergaard
+      - James Ward-Prowse
+      - Ward-Prowse
+      - Angus Gunn
+      - Gunn
+      - Sofiane Boufal
+      - Boufal
+      - Josh Sims
+      - Sims
+      - Kyle Walker-Peters
+      - Walker-Peters
+      - Jan Bednarek
+      - Bednarek
+      - Che Adams
+      - Adams
+      - Yan Valery
+      - Valery
+      - William Smallbone
+      - Smallbone
+      - Jake Vokins
+      - Vokins
+      - Michael Obafemi
+      - Obafemi
+      - Moussa Djenepo
+      - Djenepo
+      - Mohammed Salisu
+      - Salisu
+      - Fraser Forster
+      - Forster
+      - Nathan Tella
+      - Tella
+      - Ibrahima Diallo
+      - Diallo
+      - Daniel N'Lundulu
+      - N'Lundulu
+      - Kayne Ramsay
+      - Ramsay
+      - Kgaogelo Chauke
+      - Chauke
+      - Harry Lewis
+      - Lewis
+      - Will Ferry
+      - Ferry
+      - Allan Tchaptchet
+      - Tchaptchet
+      - Caleb Watts
+      - Watts
+      - Alexandre Jankewitz
+      - Jankewitz
+      - Ryan Finnigan
+      - Finnigan
+      - Hugo Lloris
+      - Lloris
+      - Danny Rose
+      - Rose
+      - Moussa Sissoko
+      - Sissoko
+      - Toby Alderweireld
+      - Alderweireld
+      - Erik Lamela
+      - Lamela
+      - Harry Kane
+      - Kane
+      - Serge Aurier
+      - Aurier
+      - Heung-Min Son
+      - Son
+      - Eric Dier
+      - Dier
+      - Lucas Rodrigues Moura da Silva
+      - Lucas Moura
+      - Paulo Gazzaniga
+      - Gazzaniga
+      - Bamidele Alli
+      - Alli
+      - Ben Davies
+      - Davies
+      - Pierre-Emile Højbjerg
+      - Højbjerg
+      - Harry Winks
+      - Winks
+      - Davinson Sánchez
+      - Sánchez
+      - Ryan Sessegnon
+      - Sessegnon
+      - Steven Bergwijn
+      - Bergwijn
+      - Gedson Carvalho Fernandes
+      - Fernandes
+      - Japhet Tanganga
+      - Tanganga
+      - Giovani Lo Celso
+      - Lo Celso
+      - Oliver Skipp
+      - Skipp
+      - Tanguy Ndombele
+      - Ndombele
+      - Juan Foyth
+      - Foyth
+      - Matt Doherty
+      - Doherty
+      - Joe Hart
+      - Hart
+      - Cameron Carter-Vickers
+      - Carter-Vickers
+      - Sergio Reguilón
+      - Reguilón
+      - Gareth Bale
+      - Bale
+      - Carlos Vinicius Alves Morais
+      - Carlos Vinicius
+      - Joe Rodon
+      - Rodon
+      - Alfie Devine
+      - Devine
+      - Dane Scarlett
+      - Scarlett
+      - Ainsley Maitland-Niles
+      - Maitland-Niles
+      - David Button
+      - Button
+      - Callum Robinson
+      - Callum Robinson
+      - Kieran Gibbs
+      - Gibbs
+      - Hal Robson-Kanu
+      - Robson-Kanu
+      - Jake Livermore
+      - Livermore
+      - Kamil Grosicki
+      - Grosicki
+      - Matt Phillips
+      - Phillips
+      - Kyle Bartley
+      - Bartley
+      - Romaine Sawyers
+      - Sawyers
+      - Ahmed El-Sayed Hegazy
+      - Hegazi
+      - Charlie Austin
+      - Austin
+      - Kenneth Zohore
+      - Zohore
+      - Sam Johnstone
+      - Johnstone
+      - Conor Townsend
+      - Townsend
+      - Oluwasemilogo Adesewo Ibidapo Ajayi
+      - Ajayi
+      - Jonathan Leko
+      - Leko
+      - Kyle Edwards
+      - Edwards
+      - Darnell Furlong
+      - Furlong
+      - Sam Field
+      - Field
+      - Dara O'Shea
+      - O'Shea
+      - Rekeem Harper
+      - Harper
+      - Robert Snodgrass
+      - Snodgrass
+      - Grady Diangana
+      - Diangana
+      - Matheus Pereira
+      - Pereira
+      - Cedric Kipre
+      - Kipre
+      - Branislav Ivanovic
+      - Ivanovic
+      - Conor Gallagher
+      - Gallagher
+      - Filip Krovinovic
+      - Krovinovic
+      - Karlan Grant
+      - Grant
+      - Lee Peltier
+      - Peltier
+      - Cheikh Diaby
+      - Diaby
+      - Andy Lonergan
+      - Lonergan
+      - Mbaye Diagne
+      - Diagne
+      - Okay Yokuslu
+      - Yokuslu
+      - Caleb Taylor
+      - Taylor
+      - Taylor Gardner-Hickman
+      - Gardner-Hickman
+      - Jesse Lingard
+      - Lingard
+      - Mark Noble
+      - Noble
+      - David Martin
+      - Martin
+      - Darren Randolph
+      - Randolph
+      - Lukasz Fabianski
+      - Fabianski
+      - Angelo Ogbonna
+      - Ogbonna
+      - Roberto Jimenez Gago
+      - Roberto
+      - Jack Wilshere
+      - Wilshere
+      - Aaron Cresswell
+      - Cresswell
+      - Andriy Yarmolenko
+      - Yarmolenko
+      - Michail Antonio
+      - Antonio
+      - Ryan Fredericks
+      - Fredericks
+      - Manuel Lanzini
+      - Lanzini
+      - Felipe Anderson Pereira Gomes
+      - Felipe Anderson
+      - Sébastien Haller
+      - Haller
+      - Arthur Masuaku
+      - Masuaku
+      - Fabián Balbuena
+      - Balbuena
+      - Jordan Hugill
+      - Hugill
+      - Jarrod Bowen
+      - Bowen
+      - Albian Ajeti
+      - Ajeti
+      - Declan Rice
+      - Rice
+      - Tomas Soucek
+      - Soucek
+      - Pablo Fornals
+      - Fornals
+      - Issa Diop
+      - Diop
+      - Ben Johnson
+      - Johnson
+      - Vladimir Coufal
+      - Coufal
+      - Craig Dawson
+      - Dawson
+      - Saïd Benrahma
+      - Benrahma
+      - Frederik Alves
+      - Alves
+      - Ademipo Odubeko
+      - Odubeko
+      - Conor Coventry
+      - Coventry
+      - Jamal Baptiste
+      - Baptiste
+      - Nathan Trott
+      - Trott
+      - John Ruddy
+      - Ruddy
+      - João Filipe Iria Santos Moutinho
+      - Moutinho
+      - Rui Pedro dos Santos Patrício
+      - Patrício
+      - Ryan Bennett
+      - Bennett
+      - Willy Boly
+      - Boly
+      - Conor Coady
+      - Coady
+      - Raúl Jiménez
+      - Jiménez
+      - Romain Saïss
+      - Saïss
+      - Jonathan Castro Otto
+      - Jonny
+      - Léo Bonatini
+      - Bonatini
+      - Leander Dendoncker
+      - Dendoncker
+      - Adama Traoré
+      - Traoré
+      - Rúben Diogo da Silva Neves
+      - Neves
+      - Oskar Buur
+      - Buur
+      - Daniel Castelo Podence
+      - Podence
+      - Max Kilman
+      - Kilman
+      - Rúben Gonçalo Silva Nascimento Vinagre
+      - Vinagre
+      - Matija Sarkic
+      - Sarkic
+      - Morgan Gibbs-White
+      - Gibbs-White
+      - Pedro Lomba Neto
+      - Neto
+      - Bruno André Cavaco Jordao
+      - Jordao
+      - Leonardo Campana
+      - Campana
+      - Fabio Silva
+      - Fabio Silva
+      - Fernando Marçal
+      - Marçal
+      - Vitor Ferreira
+      - Vitinha
+      - Ki-Jana Hoever
+      - Hoever
+      - Nélson Cabral Semedo
+      - Semedo
+      - Meritan Shabani
+      - Shabani
+      - Rayan Ait Nouri
+      - Ait Nouri
+      - Owen Otasowie
+      - Otasowie
+      - Theo Corbeanu
+      - Corbeanu
+      - Taylor Perry
+      - Perry
+      - Luke Cundle
+      - Cundle
+      - Lewis Richards
+      - Richards
+      - Christian Marques
+      - Marques
+      - Andreas Söndergaard
+      - Söndergaard
+      - Patrick Cutrone
+      - Cutrone
+      - Nigel Lonwijk
+      - Lonwijk
+      - Willian José Da Silva
+      - Willian José
+      - Hugo Bueno
+      - Bueno
+
+
+ 

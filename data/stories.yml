@@ -1,0 +1,82 @@
+version: "2.0"
+stories:
+
+- story: user give a name 
+  steps: 
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
+
+- story: which team do that player play for
+  steps:
+    - intent: ask_player_team
+    - action: action_provide_player_team
+
+- story: how many goals scored
+  steps:
+    - intent: ask_player_goalscored
+    - action: action_provide_player_goalscored
+
+- story: how many assists
+  steps: 
+    - intent: ask_player_assist
+    - action: action_provide_player_assist
+
+- story: how many clean sheets
+  steps:
+    - intent: ask_player_cleansheet
+    - action: action_provide_player_cleansheet
+
+- story: what team is this manager in
+  steps: 
+    - intent: ask_manager_team
+    - action: action_provide_manager_team
+
+- story: the next match of the team
+  steps:
+    - intent: ask_team_next_match
+    - action: action_provide_team_next_match
+
+- story: what is the manager of the team
+  steps:
+    - intent: ask_team_manager
+    - action: action_provide_team_manager
+  
+- story: team ranking 
+  steps: 
+    - intent: ask_team_ranking
+    - action: action_provide_team_ranking
+
+- story: schedule 
+  steps:
+    - intent: ask_schedule
+    - action: action_provide_schedule
+
+- story: league result 
+  steps:
+    - intent: ask_league_result
+    - action: action_provide_league_result
+
+- story: top scorer
+  steps:
+    - intent: ask_league_topscorer
+    - action: action_provide_topscorer_list
+
+- story: top assist 
+  steps:
+    - intent: ask_league_topassist
+    - action: action_provide_topassist_list
+
+- story: top goalkeeper
+  steps: 
+    - intent: ask_league_topgk
+    - action: action_provide_topgk_list
+
+- story: standings
+  steps:
+    - intent: ask_league_standings
+    - action: action_provide_standings_table
+
+- story: spectacular match 
+  steps:
+    - intent: ask_about_match
+    - action: action_provide_match_infor

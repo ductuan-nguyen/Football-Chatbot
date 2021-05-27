@@ -1,0 +1,42 @@
+[
+  {
+    "text": "good",
+    "intent": "praise",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6459117531776428
+    }
+  },
+  {
+    "text": "tuchel l\u00e0 ai",
+    "intent": "ask_about_a_person",
+    "intent_prediction": {
+      "name": "ask_about_a_name",
+      "confidence": 0.7803540825843811
+    }
+  },
+  {
+    "text": "[MU] (club_name)",
+    "intent": "ask_about_a_person",
+    "intent_prediction": {
+      "name": "ask_about_a_name",
+      "confidence": 0.9661979675292969
+    }
+  },
+  {
+    "text": "[son heung min] (player_name)",
+    "intent": "ask_about_a_person",
+    "intent_prediction": {
+      "name": "praise",
+      "confidence": 0.4932612180709839
+    }
+  },
+  {
+    "text": "west brom vs leicester",
+    "intent": "ask_about_match",
+    "intent_prediction": {
+      "name": "praise",
+      "confidence": 0.38742271065711975
+    }
+  }
+]

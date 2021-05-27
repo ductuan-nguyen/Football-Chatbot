@@ -1,0 +1,37 @@
+version: "2.0"
+
+rules:
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: response when user say thank
+    steps:
+      - intent: thank_you
+      - action: utter_noworry
+
+  - rule: response when user praise
+    steps:
+      - intent: praise
+      - action: utter_response_praise
+
+  - rule: response when user decry
+    steps:
+      - intent: decry
+      - action: utter_sorry
+
+  - rule: show name when user ask name
+    steps:
+      - intent: ask_name
+      - action: utter_show_name
+
+  - rule: show ability
+    steps:
+      - intent: ask_ability
+      - action: utter_show_ability

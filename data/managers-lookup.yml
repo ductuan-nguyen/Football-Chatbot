@@ -1,0 +1,25 @@
+version: "2.0"
+
+nlu:
+  - lookup: manager_name
+    examples: |
+      - Arteta
+      - Dean Smith
+      - Thomas Tuchel
+      - Carlo Ancelotti
+      - Scott Parker
+      - Jürgen Klopp
+      - Pep Guardiola
+      - Ole Gunnar Solskjær
+      - Steve Bruce
+      - José Mourinho
+      - Sam Allardyce
+      - Nuno Espírito Santo
+      - Sean Dyche
+      - Brendan Rodgers
+      - Ralph Hasenhüttl
+      - Marcelo Bielsa
+      - Roy Hodgson
+      - Chris Wilder
+      - Graham Potter
+      - David Moyes

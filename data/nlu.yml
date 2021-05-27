@@ -1,0 +1,1023 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - chào
+      - hello
+      - hi
+      - bot ơi
+      - cho mình hỏi chút
+      - ê
+      - alo
+      - ey
+      - cho hỏi cái
+      - eeee
+      - cho t hỏi chút
+      - ê hỏi phát
+
+  - intent: goodbye
+    examples: |
+      - good bye
+      - bye bye
+      - tạm biệt
+      - tạm biệt bot nhá
+  - intent: ask_ability
+    examples: |
+      - m có thể làm những gì nhỉ
+      - bạn có thể làm những gì nhỉ
+      - m có chức năng gì?
+      - m giúp gì được t không?
+      - bạn có giúp gì t được không?
+      - bạn có thể giúp gì cho m?
+      - m biết làm gì?
+      - bạn biết làm gì
+      - m có những chức năng gì?
+      - m biết làm gì
+  - intent: thank_you
+    examples: |
+      - cảm ơn nhá
+      - cảm ơn bạn nhá
+      - thanks
+      - cảm ơn nha
+      - good job
+      - thank you
+      - cảm ơn bot nha
+      - thanks bot
+      - cảm ơn
+      - ok nhá
+  - intent: praise
+    examples: |
+      - bot giỏi quá
+      - great
+      - awesome
+      - ui giỏi thế
+      - bot thông minh
+      - đẹp trai đấy
+      - được đấy
+      - great! Thanks
+      - được nhỉ
+      - khá đấy
+  - intent: decry
+    examples: |
+      - quá tệ
+      - ngu ngốc
+      - chả biết gì cả
+      - ngu thật
+      - dở ghê
+      - có thế mà cũng không biết
+      - kém cỏi
+      - ngu thế
+      - gà
+  - intent: ask_name
+    examples: |
+      - m tên gì nhỉ?
+      - m tên gì?
+      - tên gì e
+      - bạn tên là gì?
+      - tên bạn là gì?
+
+  - intent: ask_about_a_name
+    examples: |
+      - m có biết [salah](player_name) ko?
+      - m có biết [kane](player_name) ko?
+      - m có biết [pogba](player_name) ko?
+      - biết [bruno](player_name) ko?
+      - biết jordan Pickford ko
+      - martial là ai
+      - firmino là ai
+      - m có biết [klopp](manager_name) ko
+      - [klopp](manager_name) là ai
+
+  - intent: ask_player_team
+    examples: |
+      - salah đội nào
+      - firmino đội nào
+      - Henderson đội nào
+      - kane đá cho đội nào
+      - pogba đá cho đội nào
+      - Robson-Kanu đá cho đội nào
+      - martial đá cho clb nào
+      - Henderson đá cho clb nào
+      - de Bruyne đá cho clb nào
+      - alisson bắt cho clb nào?
+      - Ederson bắt cho clb nào?
+      - Pickford bắt cho clb nào?
+      
+  - intent: ask_player_goalscored
+    examples: |
+      - salah số bàn thắng
+      - de Bruyne số bàn thắng
+      - firmino số bàn thắng
+      - số bàn thắng của salah
+      - số bàn thắng của pogba
+      - số bàn thắng của martial
+      - Henderson bàn thắng
+      - Wan-Bissaka bàn thắng
+      - Ward-Prowse bàn thắng
+      - salah đã ghi được bao nhiêu bàn?
+      - firmino đã ghi được bao nhiêu bàn?
+      - Jota đã ghi được bao nhiêu bàn?
+
+  - intent: ask_player_assist
+    examples: |
+      - salah số kiến tạo
+      - firmino số kiến tạo
+      - Jota số kiến tạo
+      - số kiến tạo của Henderson
+      - số kiến tạo của pogba
+      - số kiến tạo của Robson-Kanu
+      - de Bruyne kiến tạo
+      - firmino kiến tạo
+      - Jota kiến tạo
+      - alison số kiến tạo mùa này?
+      - Ederson số kiến tạo mùa này?
+      - Pickford số kiến tạo mùa này?
+
+  - intent: ask_player_cleansheet
+    examples: |
+      - số trận giữ sạch lưới alisson
+      - số trận giữ sạch lưới Ederson
+      - số trận giữ sạch lưới Pickford
+      - firmino số trận sạch lưới
+      - Jota số trận sạch lưới
+      - pogba số trận sạch lưới
+ 
+  - intent: ask_manager_team
+    examples: |
+      - klopp là huấn luyện viên đội nào?
+      - tuchel là huấn luyện viên đội nào?
+      - Arteta là huấn luyện viên đội nào?
+      - ancelotti là hlv đội nào?
+      - bruce là hlv đội nào?
+      - pep là hlv đội nào?
+
+  - intent: ask_team_next_match
+    examples: |
+      - [liverpool](club_name) trận đấu tiếp theo
+      - [Tottenham](club_name) trận đấu tiếp theo
+      - man city trận đấu tiếp theo
+      - trận tiếp theo của Wolverhampton
+      - trận tiếp theo man united
+      - trận tiếp theo Sheffield
+
+  - intent: ask_team_manager
+    examples: |
+      - hlv của liverpool
+      - hlv Tottenham
+      - hlv của man city là ai
+      - hlv Wolverhampton là ai
+      - man united hlv hiện tại
+      - hlv hiện tại Sheffield 
+      - hlv của Southampton
+      - hlv Leicester city
+      - hlv của West Ham là ai
+      - hlv West Brom là ai
+      - Tottenham hlv hiện tại
+      - hlv hiện tại Tottenham 
+      - hlv của Leeds
+      - hlv Burnley
+      - hlv của Arsenal là ai
+      - hlv liverpool là ai
+      - Aston Villa hlv hiện tại
+      - hlv hiện tại man united 
+
+  - intent: ask_team_ranking
+    examples: |
+      - liverpool đứng thứ mấy NHA
+      - Arsenal xếp thứ mấy epl
+      - Tottenham đứng thứ mấy
+      - man city xếp thứ mấy
+      - man united xếp hạng
+      - West ham đứng thứ mấy NHA
+      - West brom xếp thứ mấy epl
+      - Southampton đứng thứ mấy
+      - Sheffield xếp thứ mấy
+      - Fulham xếp hạng
+      - Burnley đứng thứ mấy NHA
+      - Chelsea xếp thứ mấy epl
+      - Leicester city đứng thứ mấy
+      - Leeds xếp thứ mấy
+      - Tottenham xếp hạng
+  
+  - intent: ask_schedule
+    examples: |
+      - lịch thi đấu 
+      - lịch thi đấu [vòng 33](round)
+      - lịch thi đấu vòng 11
+      - lịch thi đấu vòng 12
+      - [vòng 33](round) ngoại hạng anh
+      - vòng 1 ngoại hạng anh
+      - vòng 2 ngoại hạng anh
+      - vòng 12 epl
+      - vòng 3 epl
+      - vòng 4 epl
+      - lịch thi đấu liverpool
+      - man city lịch thi đấu
+      - Tottenham lịch thi đấu
+      - lịch thi đấu man united vòng 11
+      - man united lịch thi đấu vòng 12
+      - Tottenham lịch thi đấu vòng 13
+
+  - intent: ask_league_result
+    examples: |
+      - kết quả ngoại hạng anh
+      - kq ngoại hạng anh
+      - ngoại hạng anh kq
+      - kết quả
+
+  - intent: ask_league_topscorer
+    examples: |
+      - cầu thủ ghi bàn nhiều nhất
+      - vua phá lưới hiện tại
+      - danh sách cầu thủ ghi bàn nhiều nhất
+      - top ghi bàn
+      - top ghi bàn hiện tại
+
+  - intent: ask_league_topassist
+    examples: |
+      - cầu thủ kiến tạo nhiều nhất
+      - danh sách cầu thủ kiến tạo nhiều nhất
+      - top kiến tạo 
+      - top kiến tạo hiện tại
+
+  - intent: ask_league_topgk
+    examples: |
+      - top thủ môn ngoại hạng anh
+      - thủ môn xuất sắc nhất
+      - top thủ môn hiện tại
+      - top thủ môn
+
+  - intent: ask_league_standings
+    examples: |
+      - bxh
+      - bảng xếp hạng
+      - bhx hiện tại
+      - bảng xếp hạng hiện tại
+
+  - intent: ask_about_match
+    examples: |
+      - Arsenal vs Aston Villa
+      - ARS vs AST
+      - Arsenal vs Chelsea
+      - ARS vs CHE
+      - Arsenal vs Everton
+      - ARS vs EVE
+      - Arsenal vs Fulham
+      - ARS vs FUL
+      - Arsenal vs Liverpool
+      - ARS vs LIV
+      - Arsenal vs Man City
+      - ARS vs MCI
+      - Arsenal vs Man United
+      - ARS vs MUN
+      - Arsenal vs Newcastle
+      - ARS vs NEW
+      - Arsenal vs Tottenham
+      - ARS vs TOT
+      - Arsenal vs West Brom
+      - ARS vs WBA
+      - Arsenal vs Wolverhampton
+      - ARS vs WOL
+      - Arsenal vs Burnley
+      - ARS vs BUR
+      - Arsenal vs Leicester City
+      - ARS vs LEI
+      - Arsenal vs Southampton
+      - ARS vs SOU
+      - Arsenal vs Leeds United
+      - ARS vs LEE
+      - Arsenal vs Crystal Palace
+      - ARS vs CRY
+      - Arsenal vs Sheffield Utd
+      - ARS vs SHE
+      - Arsenal vs Brighton Hove
+      - ARS vs BHA
+      - Arsenal vs West Ham
+      - ARS vs WHU
+      - Aston Villa vs Arsenal
+      - AST vs ARS
+      - Aston Villa vs Chelsea
+      - AST vs CHE
+      - Aston Villa vs Everton
+      - AST vs EVE
+      - Aston Villa vs Fulham
+      - AST vs FUL
+      - Aston Villa vs Liverpool
+      - AST vs LIV
+      - Aston Villa vs Man City
+      - AST vs MCI
+      - Aston Villa vs Man United
+      - AST vs MUN
+      - Aston Villa vs Newcastle
+      - AST vs NEW
+      - Aston Villa vs Tottenham
+      - AST vs TOT
+      - Aston Villa vs West Brom
+      - AST vs WBA
+      - Aston Villa vs Wolverhampton
+      - AST vs WOL
+      - Aston Villa vs Burnley
+      - AST vs BUR
+      - Aston Villa vs Leicester City
+      - AST vs LEI
+      - Aston Villa vs Southampton
+      - AST vs SOU
+      - Aston Villa vs Leeds United
+      - AST vs LEE
+      - Aston Villa vs Crystal Palace
+      - AST vs CRY
+      - Aston Villa vs Sheffield Utd
+      - AST vs SHE
+      - Aston Villa vs Brighton Hove
+      - AST vs BHA
+      - Aston Villa vs West Ham
+      - AST vs WHU
+      - Chelsea vs Arsenal
+      - CHE vs ARS
+      - Chelsea vs Aston Villa
+      - CHE vs AST
+      - Chelsea vs Everton
+      - CHE vs EVE
+      - Chelsea vs Fulham
+      - CHE vs FUL
+      - Chelsea vs Liverpool
+      - CHE vs LIV
+      - Chelsea vs Man City
+      - CHE vs MCI
+      - Chelsea vs Man United
+      - CHE vs MUN
+      - Chelsea vs Newcastle
+      - CHE vs NEW
+      - Chelsea vs Tottenham
+      - CHE vs TOT
+      - Chelsea vs West Brom
+      - CHE vs WBA
+      - Chelsea vs Wolverhampton
+      - CHE vs WOL
+      - Chelsea vs Burnley
+      - CHE vs BUR
+      - Chelsea vs Leicester City
+      - CHE vs LEI
+      - Chelsea vs Southampton
+      - CHE vs SOU
+      - Chelsea vs Leeds United
+      - CHE vs LEE
+      - Chelsea vs Crystal Palace
+      - CHE vs CRY
+      - Chelsea vs Sheffield Utd
+      - CHE vs SHE
+      - Chelsea vs Brighton Hove
+      - CHE vs BHA
+      - Chelsea vs West Ham
+      - CHE vs WHU
+      - Everton vs Arsenal
+      - EVE vs ARS
+      - Everton vs Aston Villa
+      - EVE vs AST
+      - Everton vs Chelsea
+      - EVE vs CHE
+      - Everton vs Fulham
+      - EVE vs FUL
+      - Everton vs Liverpool
+      - EVE vs LIV
+      - Everton vs Man City
+      - EVE vs MCI
+      - Everton vs Man United
+      - EVE vs MUN
+      - Everton vs Newcastle
+      - EVE vs NEW
+      - Everton vs Tottenham
+      - EVE vs TOT
+      - Everton vs West Brom
+      - EVE vs WBA
+      - Everton vs Wolverhampton
+      - EVE vs WOL
+      - Everton vs Burnley
+      - EVE vs BUR
+      - Everton vs Leicester City
+      - EVE vs LEI
+      - Everton vs Southampton
+      - EVE vs SOU
+      - Everton vs Leeds United
+      - EVE vs LEE
+      - Everton vs Crystal Palace
+      - EVE vs CRY
+      - Everton vs Sheffield Utd
+      - EVE vs SHE
+      - Everton vs Brighton Hove
+      - EVE vs BHA
+      - Everton vs West Ham
+      - EVE vs WHU
+      - Fulham vs Arsenal
+      - FUL vs ARS
+      - Fulham vs Aston Villa
+      - FUL vs AST
+      - Fulham vs Chelsea
+      - FUL vs CHE
+      - Fulham vs Everton
+      - FUL vs EVE
+      - Fulham vs Liverpool
+      - FUL vs LIV
+      - Fulham vs Man City
+      - FUL vs MCI
+      - Fulham vs Man United
+      - FUL vs MUN
+      - Fulham vs Newcastle
+      - FUL vs NEW
+      - Fulham vs Tottenham
+      - FUL vs TOT
+      - Fulham vs West Brom
+      - FUL vs WBA
+      - Fulham vs Wolverhampton
+      - FUL vs WOL
+      - Fulham vs Burnley
+      - FUL vs BUR
+      - Fulham vs Leicester City
+      - FUL vs LEI
+      - Fulham vs Southampton
+      - FUL vs SOU
+      - Fulham vs Leeds United
+      - FUL vs LEE
+      - Fulham vs Crystal Palace
+      - FUL vs CRY
+      - Fulham vs Sheffield Utd
+      - FUL vs SHE
+      - Fulham vs Brighton Hove
+      - FUL vs BHA
+      - Fulham vs West Ham
+      - FUL vs WHU
+      - Liverpool vs Arsenal
+      - LIV vs ARS
+      - Liverpool vs Aston Villa
+      - LIV vs AST
+      - Liverpool vs Chelsea
+      - LIV vs CHE
+      - Liverpool vs Everton
+      - LIV vs EVE
+      - Liverpool vs Fulham
+      - LIV vs FUL
+      - Liverpool vs Man City
+      - LIV vs MCI
+      - Liverpool vs Man United
+      - LIV vs MUN
+      - Liverpool vs Newcastle
+      - LIV vs NEW
+      - Liverpool vs Tottenham
+      - LIV vs TOT
+      - Liverpool vs West Brom
+      - LIV vs WBA
+      - Liverpool vs Wolverhampton
+      - LIV vs WOL
+      - Liverpool vs Burnley
+      - LIV vs BUR
+      - Liverpool vs Leicester City
+      - LIV vs LEI
+      - Liverpool vs Southampton
+      - LIV vs SOU
+      - Liverpool vs Leeds United
+      - LIV vs LEE
+      - Liverpool vs Crystal Palace
+      - LIV vs CRY
+      - Liverpool vs Sheffield Utd
+      - LIV vs SHE
+      - Liverpool vs Brighton Hove
+      - LIV vs BHA
+      - Liverpool vs West Ham
+      - LIV vs WHU
+      - Man City vs Arsenal
+      - MCI vs ARS
+      - Man City vs Aston Villa
+      - MCI vs AST
+      - Man City vs Chelsea
+      - MCI vs CHE
+      - Man City vs Everton
+      - MCI vs EVE
+      - Man City vs Fulham
+      - MCI vs FUL
+      - Man City vs Liverpool
+      - MCI vs LIV
+      - Man City vs Man United
+      - MCI vs MUN
+      - Man City vs Newcastle
+      - MCI vs NEW
+      - Man City vs Tottenham
+      - MCI vs TOT
+      - Man City vs West Brom
+      - MCI vs WBA
+      - Man City vs Wolverhampton
+      - MCI vs WOL
+      - Man City vs Burnley
+      - MCI vs BUR
+      - Man City vs Leicester City
+      - MCI vs LEI
+      - Man City vs Southampton
+      - MCI vs SOU
+      - Man City vs Leeds United
+      - MCI vs LEE
+      - Man City vs Crystal Palace
+      - MCI vs CRY
+      - Man City vs Sheffield Utd
+      - MCI vs SHE
+      - Man City vs Brighton Hove
+      - MCI vs BHA
+      - Man City vs West Ham
+      - MCI vs WHU
+      - Man United vs Arsenal
+      - MUN vs ARS
+      - Man United vs Aston Villa
+      - MUN vs AST
+      - Man United vs Chelsea
+      - MUN vs CHE
+      - Man United vs Everton
+      - MUN vs EVE
+      - Man United vs Fulham
+      - MUN vs FUL
+      - Man United vs Liverpool
+      - MUN vs LIV
+      - Man United vs Man City
+      - MUN vs MCI
+      - Man United vs Newcastle
+      - MUN vs NEW
+      - Man United vs Tottenham
+      - MUN vs TOT
+      - Man United vs West Brom
+      - MUN vs WBA
+      - Man United vs Wolverhampton
+      - MUN vs WOL
+      - Man United vs Burnley
+      - MUN vs BUR
+      - Man United vs Leicester City
+      - MUN vs LEI
+      - Man United vs Southampton
+      - MUN vs SOU
+      - Man United vs Leeds United
+      - MUN vs LEE
+      - Man United vs Crystal Palace
+      - MUN vs CRY
+      - Man United vs Sheffield Utd
+      - MUN vs SHE
+      - Man United vs Brighton Hove
+      - MUN vs BHA
+      - Man United vs West Ham
+      - MUN vs WHU
+      - Newcastle vs Arsenal
+      - NEW vs ARS
+      - Newcastle vs Aston Villa
+      - NEW vs AST
+      - Newcastle vs Chelsea
+      - NEW vs CHE
+      - Newcastle vs Everton
+      - NEW vs EVE
+      - Newcastle vs Fulham
+      - NEW vs FUL
+      - Newcastle vs Liverpool
+      - NEW vs LIV
+      - Newcastle vs Man City
+      - NEW vs MCI
+      - Newcastle vs Man United
+      - NEW vs MUN
+      - Newcastle vs Tottenham
+      - NEW vs TOT
+      - Newcastle vs West Brom
+      - NEW vs WBA
+      - Newcastle vs Wolverhampton
+      - NEW vs WOL
+      - Newcastle vs Burnley
+      - NEW vs BUR
+      - Newcastle vs Leicester City
+      - NEW vs LEI
+      - Newcastle vs Southampton
+      - NEW vs SOU
+      - Newcastle vs Leeds United
+      - NEW vs LEE
+      - Newcastle vs Crystal Palace
+      - NEW vs CRY
+      - Newcastle vs Sheffield Utd
+      - NEW vs SHE
+      - Newcastle vs Brighton Hove
+      - NEW vs BHA
+      - Newcastle vs West Ham
+      - NEW vs WHU
+      - Tottenham vs Arsenal
+      - TOT vs ARS
+      - Tottenham vs Aston Villa
+      - TOT vs AST
+      - Tottenham vs Chelsea
+      - TOT vs CHE
+      - Tottenham vs Everton
+      - TOT vs EVE
+      - Tottenham vs Fulham
+      - TOT vs FUL
+      - Tottenham vs Liverpool
+      - TOT vs LIV
+      - Tottenham vs Man City
+      - TOT vs MCI
+      - Tottenham vs Man United
+      - TOT vs MUN
+      - Tottenham vs Newcastle
+      - TOT vs NEW
+      - Tottenham vs West Brom
+      - TOT vs WBA
+      - Tottenham vs Wolverhampton
+      - TOT vs WOL
+      - Tottenham vs Burnley
+      - TOT vs BUR
+      - Tottenham vs Leicester City
+      - TOT vs LEI
+      - Tottenham vs Southampton
+      - TOT vs SOU
+      - Tottenham vs Leeds United
+      - TOT vs LEE
+      - Tottenham vs Crystal Palace
+      - TOT vs CRY
+      - Tottenham vs Sheffield Utd
+      - TOT vs SHE
+      - Tottenham vs Brighton Hove
+      - TOT vs BHA
+      - Tottenham vs West Ham
+      - TOT vs WHU
+      - West Brom vs Arsenal
+      - WBA vs ARS
+      - West Brom vs Aston Villa
+      - WBA vs AST
+      - West Brom vs Chelsea
+      - WBA vs CHE
+      - West Brom vs Everton
+      - WBA vs EVE
+      - West Brom vs Fulham
+      - WBA vs FUL
+      - West Brom vs Liverpool
+      - WBA vs LIV
+      - West Brom vs Man City
+      - WBA vs MCI
+      - West Brom vs Man United
+      - WBA vs MUN
+      - West Brom vs Newcastle
+      - WBA vs NEW
+      - West Brom vs Tottenham
+      - WBA vs TOT
+      - West Brom vs Wolverhampton
+      - WBA vs WOL
+      - West Brom vs Burnley
+      - WBA vs BUR
+      - West Brom vs Leicester City
+      - WBA vs LEI
+      - West Brom vs Southampton
+      - WBA vs SOU
+      - West Brom vs Leeds United
+      - WBA vs LEE
+      - West Brom vs Crystal Palace
+      - WBA vs CRY
+      - West Brom vs Sheffield Utd
+      - WBA vs SHE
+      - West Brom vs Brighton Hove
+      - WBA vs BHA
+      - West Brom vs West Ham
+      - WBA vs WHU
+      - Wolverhampton vs Arsenal
+      - WOL vs ARS
+      - Wolverhampton vs Aston Villa
+      - WOL vs AST
+      - Wolverhampton vs Chelsea
+      - WOL vs CHE
+      - Wolverhampton vs Everton
+      - WOL vs EVE
+      - Wolverhampton vs Fulham
+      - WOL vs FUL
+      - Wolverhampton vs Liverpool
+      - WOL vs LIV
+      - Wolverhampton vs Man City
+      - WOL vs MCI
+      - Wolverhampton vs Man United
+      - WOL vs MUN
+      - Wolverhampton vs Newcastle
+      - WOL vs NEW
+      - Wolverhampton vs Tottenham
+      - WOL vs TOT
+      - Wolverhampton vs West Brom
+      - WOL vs WBA
+      - Wolverhampton vs Burnley
+      - WOL vs BUR
+      - Wolverhampton vs Leicester City
+      - WOL vs LEI
+      - Wolverhampton vs Southampton
+      - WOL vs SOU
+      - Wolverhampton vs Leeds United
+      - WOL vs LEE
+      - Wolverhampton vs Crystal Palace
+      - WOL vs CRY
+      - Wolverhampton vs Sheffield Utd
+      - WOL vs SHE
+      - Wolverhampton vs Brighton Hove
+      - WOL vs BHA
+      - Wolverhampton vs West Ham
+      - WOL vs WHU
+      - Burnley vs Arsenal
+      - BUR vs ARS
+      - Burnley vs Aston Villa
+      - BUR vs AST
+      - Burnley vs Chelsea
+      - BUR vs CHE
+      - Burnley vs Everton
+      - BUR vs EVE
+      - Burnley vs Fulham
+      - BUR vs FUL
+      - Burnley vs Liverpool
+      - BUR vs LIV
+      - Burnley vs Man City
+      - BUR vs MCI
+      - Burnley vs Man United
+      - BUR vs MUN
+      - Burnley vs Newcastle
+      - BUR vs NEW
+      - Burnley vs Tottenham
+      - BUR vs TOT
+      - Burnley vs West Brom
+      - BUR vs WBA
+      - Burnley vs Wolverhampton
+      - BUR vs WOL
+      - Burnley vs Leicester City
+      - BUR vs LEI
+      - Burnley vs Southampton
+      - BUR vs SOU
+      - Burnley vs Leeds United
+      - BUR vs LEE
+      - Burnley vs Crystal Palace
+      - BUR vs CRY
+      - Burnley vs Sheffield Utd
+      - BUR vs SHE
+      - Burnley vs Brighton Hove
+      - BUR vs BHA
+      - Burnley vs West Ham
+      - BUR vs WHU
+      - Leicester City vs Arsenal
+      - LEI vs ARS
+      - Leicester City vs Aston Villa
+      - LEI vs AST
+      - Leicester City vs Chelsea
+      - LEI vs CHE
+      - Leicester City vs Everton
+      - LEI vs EVE
+      - Leicester City vs Fulham
+      - LEI vs FUL
+      - Leicester City vs Liverpool
+      - LEI vs LIV
+      - Leicester City vs Man City
+      - LEI vs MCI
+      - Leicester City vs Man United
+      - LEI vs MUN
+      - Leicester City vs Newcastle
+      - LEI vs NEW
+      - Leicester City vs Tottenham
+      - LEI vs TOT
+      - Leicester City vs West Brom
+      - LEI vs WBA
+      - Leicester City vs Wolverhampton
+      - LEI vs WOL
+      - Leicester City vs Burnley
+      - LEI vs BUR
+      - Leicester City vs Southampton
+      - LEI vs SOU
+      - Leicester City vs Leeds United
+      - LEI vs LEE
+      - Leicester City vs Crystal Palace
+      - LEI vs CRY
+      - Leicester City vs Sheffield Utd
+      - LEI vs SHE
+      - Leicester City vs Brighton Hove
+      - LEI vs BHA
+      - Leicester City vs West Ham
+      - LEI vs WHU
+      - Southampton vs Arsenal
+      - SOU vs ARS
+      - Southampton vs Aston Villa
+      - SOU vs AST
+      - Southampton vs Chelsea
+      - SOU vs CHE
+      - Southampton vs Everton
+      - SOU vs EVE
+      - Southampton vs Fulham
+      - SOU vs FUL
+      - Southampton vs Liverpool
+      - SOU vs LIV
+      - Southampton vs Man City
+      - SOU vs MCI
+      - Southampton vs Man United
+      - SOU vs MUN
+      - Southampton vs Newcastle
+      - SOU vs NEW
+      - Southampton vs Tottenham
+      - SOU vs TOT
+      - Southampton vs West Brom
+      - SOU vs WBA
+      - Southampton vs Wolverhampton
+      - SOU vs WOL
+      - Southampton vs Burnley
+      - SOU vs BUR
+      - Southampton vs Leicester City
+      - SOU vs LEI
+      - Southampton vs Leeds United
+      - SOU vs LEE
+      - Southampton vs Crystal Palace
+      - SOU vs CRY
+      - Southampton vs Sheffield Utd
+      - SOU vs SHE
+      - Southampton vs Brighton Hove
+      - SOU vs BHA
+      - Southampton vs West Ham
+      - SOU vs WHU
+      - Leeds United vs Arsenal
+      - LEE vs ARS
+      - Leeds United vs Aston Villa
+      - LEE vs AST
+      - Leeds United vs Chelsea
+      - LEE vs CHE
+      - Leeds United vs Everton
+      - LEE vs EVE
+      - Leeds United vs Fulham
+      - LEE vs FUL
+      - Leeds United vs Liverpool
+      - LEE vs LIV
+      - Leeds United vs Man City
+      - LEE vs MCI
+      - Leeds United vs Man United
+      - LEE vs MUN
+      - Leeds United vs Newcastle
+      - LEE vs NEW
+      - Leeds United vs Tottenham
+      - LEE vs TOT
+      - Leeds United vs West Brom
+      - LEE vs WBA
+      - Leeds United vs Wolverhampton
+      - LEE vs WOL
+      - Leeds United vs Burnley
+      - LEE vs BUR
+      - Leeds United vs Leicester City
+      - LEE vs LEI
+      - Leeds United vs Southampton
+      - LEE vs SOU
+      - Leeds United vs Crystal Palace
+      - LEE vs CRY
+      - Leeds United vs Sheffield Utd
+      - LEE vs SHE
+      - Leeds United vs Brighton Hove
+      - LEE vs BHA
+      - Leeds United vs West Ham
+      - LEE vs WHU
+      - Crystal Palace vs Arsenal
+      - CRY vs ARS
+      - Crystal Palace vs Aston Villa
+      - CRY vs AST
+      - Crystal Palace vs Chelsea
+      - CRY vs CHE
+      - Crystal Palace vs Everton
+      - CRY vs EVE
+      - Crystal Palace vs Fulham
+      - CRY vs FUL
+      - Crystal Palace vs Liverpool
+      - CRY vs LIV
+      - Crystal Palace vs Man City
+      - CRY vs MCI
+      - Crystal Palace vs Man United
+      - CRY vs MUN
+      - Crystal Palace vs Newcastle
+      - CRY vs NEW
+      - Crystal Palace vs Tottenham
+      - CRY vs TOT
+      - Crystal Palace vs West Brom
+      - CRY vs WBA
+      - Crystal Palace vs Wolverhampton
+      - CRY vs WOL
+      - Crystal Palace vs Burnley
+      - CRY vs BUR
+      - Crystal Palace vs Leicester City
+      - CRY vs LEI
+      - Crystal Palace vs Southampton
+      - CRY vs SOU
+      - Crystal Palace vs Leeds United
+      - CRY vs LEE
+      - Crystal Palace vs Sheffield Utd
+      - CRY vs SHE
+      - Crystal Palace vs Brighton Hove
+      - CRY vs BHA
+      - Crystal Palace vs West Ham
+      - CRY vs WHU
+      - Sheffield Utd vs Arsenal
+      - SHE vs ARS
+      - Sheffield Utd vs Aston Villa
+      - SHE vs AST
+      - Sheffield Utd vs Chelsea
+      - SHE vs CHE
+      - Sheffield Utd vs Everton
+      - SHE vs EVE
+      - Sheffield Utd vs Fulham
+      - SHE vs FUL
+      - Sheffield Utd vs Liverpool
+      - SHE vs LIV
+      - Sheffield Utd vs Man City
+      - SHE vs MCI
+      - Sheffield Utd vs Man United
+      - SHE vs MUN
+      - Sheffield Utd vs Newcastle
+      - SHE vs NEW
+      - Sheffield Utd vs Tottenham
+      - SHE vs TOT
+      - Sheffield Utd vs West Brom
+      - SHE vs WBA
+      - Sheffield Utd vs Wolverhampton
+      - SHE vs WOL
+      - Sheffield Utd vs Burnley
+      - SHE vs BUR
+      - Sheffield Utd vs Leicester City
+      - SHE vs LEI
+      - Sheffield Utd vs Southampton
+      - SHE vs SOU
+      - Sheffield Utd vs Leeds United
+      - SHE vs LEE
+      - Sheffield Utd vs Crystal Palace
+      - SHE vs CRY
+      - Sheffield Utd vs Brighton Hove
+      - SHE vs BHA
+      - Sheffield Utd vs West Ham
+      - SHE vs WHU
+      - Brighton Hove vs Arsenal
+      - BHA vs ARS
+      - Brighton Hove vs Aston Villa
+      - BHA vs AST
+      - Brighton Hove vs Chelsea
+      - BHA vs CHE
+      - Brighton Hove vs Everton
+      - BHA vs EVE
+      - Brighton Hove vs Fulham
+      - BHA vs FUL
+      - Brighton Hove vs Liverpool
+      - BHA vs LIV
+      - Brighton Hove vs Man City
+      - BHA vs MCI
+      - Brighton Hove vs Man United
+      - BHA vs MUN
+      - Brighton Hove vs Newcastle
+      - BHA vs NEW
+      - Brighton Hove vs Tottenham
+      - BHA vs TOT
+      - Brighton Hove vs West Brom
+      - BHA vs WBA
+      - Brighton Hove vs Wolverhampton
+      - BHA vs WOL
+      - Brighton Hove vs Burnley
+      - BHA vs BUR
+      - Brighton Hove vs Leicester City
+      - BHA vs LEI
+      - Brighton Hove vs Southampton
+      - BHA vs SOU
+      - Brighton Hove vs Leeds United
+      - BHA vs LEE
+      - Brighton Hove vs Crystal Palace
+      - BHA vs CRY
+      - Brighton Hove vs Sheffield Utd
+      - BHA vs SHE
+      - Brighton Hove vs West Ham
+      - BHA vs WHU
+      - West Ham vs Arsenal
+      - WHU vs ARS
+      - West Ham vs Aston Villa
+      - WHU vs AST
+      - West Ham vs Chelsea
+      - WHU vs CHE
+      - West Ham vs Everton
+      - WHU vs EVE
+      - West Ham vs Fulham
+      - WHU vs FUL
+      - West Ham vs Liverpool
+      - WHU vs LIV
+      - West Ham vs Man City
+      - WHU vs MCI
+      - West Ham vs Man United
+      - WHU vs MUN
+      - West Ham vs Newcastle
+      - WHU vs NEW
+      - West Ham vs Tottenham
+      - WHU vs TOT
+      - West Ham vs West Brom
+      - WHU vs WBA
+      - West Ham vs Wolverhampton
+      - WHU vs WOL
+      - West Ham vs Burnley
+      - WHU vs BUR
+      - West Ham vs Leicester City
+      - WHU vs LEI
+      - West Ham vs Southampton
+      - WHU vs SOU
+      - West Ham vs Leeds United
+      - WHU vs LEE
+      - West Ham vs Crystal Palace
+      - WHU vs CRY
+      - West Ham vs Sheffield Utd
+      - WHU vs SHE
+      - West Ham vs Brighton Hove
+      - WHU vs BHA
+
+  - regex: round
+    examples: |
+      - vòng \d{1,2}
+  

@@ -1,0 +1,166 @@
+[
+  {
+    "text": "m c\u00f3 bi\u1ebft klopp ko",
+    "entities": [
+      {
+        "start": 10,
+        "end": 15,
+        "value": "klopp",
+        "entity": "manager_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "klopp l\u00e0 ai",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "klopp",
+        "entity": "manager_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "[liverpool] (club_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "club_name",
+        "start": 1,
+        "end": 10,
+        "value": "liverpool",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "klopp l\u00e0 hu\u1ea5n luy\u1ec7n vi\u00ean \u0111\u1ed9i n\u00e0o?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "klopp",
+        "entity": "manager_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "klopp l\u00e0 hlv \u0111\u1ed9i n\u00e0o?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "klopp",
+        "entity": "manager_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "liverpool vs MU",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "liverpool",
+        "entity": "club_name"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "value": "MU",
+        "entity": "club_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "club_name",
+        "start": 0,
+        "end": 9,
+        "value": "liverpool",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "k\u1ebft qu\u1ea3 liverpool vs MU",
+    "entities": [
+      {
+        "start": 8,
+        "end": 17,
+        "value": "liverpool",
+        "entity": "club_name"
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "value": "MU",
+        "entity": "club_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "club_name",
+        "start": 8,
+        "end": 17,
+        "value": "liverpool",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tuchel l\u00e0 ai",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "tuchel",
+        "entity": "manager_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "[son heung min] (player_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "player_name",
+        "start": 1,
+        "end": 4,
+        "value": "son",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "west brom vs leicester",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "west brom",
+        "entity": "club_name"
+      },
+      {
+        "start": 13,
+        "end": 22,
+        "value": "leicester",
+        "entity": "club_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "club_name",
+        "start": 0,
+        "end": 9,
+        "value": "west brom",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

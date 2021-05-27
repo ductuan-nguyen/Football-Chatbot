@@ -1,0 +1,117 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: []
+- goodbye:
+    use_entities: []
+- thank_you:
+    use_entities: []
+- praise:
+    use_entities: []
+- decry:
+    use_entities: true
+- ask_ability:
+    use_entities: true
+- ask_name:
+    use_entities: true
+- ask_about_a_name:
+    use_entities: true
+- ask_manager_team:
+    use_entities: true
+- ask_team_manager:
+    use_entities: true
+- ask_team_next_match:
+    use_entities: true
+- ask_team_ranking:
+    use_entities: true
+- ask_schedule:
+    use_entities: true
+- ask_player_team:
+    use_entities: true
+- ask_player_goalscored:
+    use_entities: true
+- ask_player_assist:
+    use_entities: true
+- ask_player_cleansheet:
+    use_entities: true
+- ask_league_result:
+    use_entities: true
+- ask_league_standings:
+    use_entities: true
+- ask_league_topassist:
+    use_entities: true
+- ask_league_topgk:
+    use_entities: true
+- ask_league_topscorer:
+    use_entities: true
+- ask_about_match:
+    use_entities: true
+entities:
+- club_name
+- manager_name
+- player_name
+- round
+slots:
+  club_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  player_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  manager_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Chào bạn
+  - text: hi bạn
+  utter_goodbye:
+  - image: https://ctl.s6img.com/society6/img/61rk5_QzuswEDdyAlJYFqf2avZY/w_700/prints/~artwork/s6-0060/a/25300751_2269031/~~/ynwa-liverpool-prints.jpg?wait=0&attempt=0
+    text: ^^
+  - text: chào bạn. Hẹn gặp lại sau nhé
+  - text: gặp lại bạn sau nhé
+  utter_response_praise:
+  - text: quá khen :v
+  - text: ngại quá, không dám :v
+  utter_show_name:
+  - text: Tôi tên là eplbot
+  utter_sorry:
+  - text: Tôi xin lôĩ nhé =(((
+  - text: xin lỗi nhá
+  utter_noworry:
+  - text: Tôi luôn sẵn lòng giúp đỡ bạn bất cứ lúc nào ^^
+  utter_show_ability:
+  - text: Tôi có thể trả lời các câu hỏi về ngoại hạng anh mùa giải 2020-2021 như bảng xếp hạng, lịch thi đấu, ... bằng tiếng Việt
+  - text: Gì chứ liên quan đến ngoại hạng anh cứ hỏi tôi :v. Tôi luôn cập nhật thông tin mới nhất về NHA 2020-2021
+  utter_fallback:
+  - text: Xin lỗi, tôi không hiểu ý của bạn.
+actions:
+- action_provide_general_infor
+- action_provide_league_result
+- action_provide_manager_team
+- action_provide_match_infor
+- action_provide_player_assist
+- action_provide_player_cleansheet
+- action_provide_player_goalscored
+- action_provide_player_team
+- action_provide_schedule
+- action_provide_standings_table
+- action_provide_team_manager
+- action_provide_team_next_match
+- action_provide_team_ranking
+- action_provide_topassist_list
+- action_provide_topgk_list
+- action_provide_topscorer_list
+forms: {}
+e2e_actions: []

@@ -1,0 +1,66 @@
+version: "2.0"
+
+nlu:
+  - lookup: club_name
+    examples: |
+      - Arsenal FC
+      - Arsenal
+      - ARS
+      - Aston Villa FC
+      - Aston Villa
+      - AST
+      - Chelsea FC
+      - Chelsea
+      - CHE
+      - Everton FC
+      - Everton
+      - EVE
+      - Fulham FC
+      - Fulham
+      - FUL
+      - Liverpool FC
+      - Liverpool
+      - LIV
+      - Manchester City FC
+      - Man City
+      - MCI
+      - Manchester United FC
+      - Man United
+      - MUN
+      - Newcastle United FC
+      - Newcastle
+      - NEW
+      - Tottenham Hotspur FC
+      - Tottenham
+      - TOT
+      - West Bromwich Albion FC
+      - West Brom
+      - WBA
+      - Wolverhampton Wanderers FC
+      - Wolverhampton
+      - WOL
+      - Burnley FC
+      - Burnley
+      - BUR
+      - Leicester City FC
+      - Leicester City
+      - LEI
+      - Southampton FC
+      - Southampton
+      - SOU
+      - Leeds United FC
+      - Leeds United
+      - LEE
+      - Crystal Palace FC
+      - Crystal Palace
+      - CRY
+      - Sheffield United FC
+      - Sheffield Utd
+      - SHE
+      - Brighton & Hove Albion FC
+      - Brighton Hove
+      - BHA
+      - West Ham United FC
+      - West Ham
+      - WHU
+
