@@ -5,14 +5,61 @@ stories:
   steps: 
     - intent: ask_about_a_name
     - action: action_provide_general_infor
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
+
+- story: user give a name 2
+  steps:
+    - intent: nlu_fallback
+    - slot_was_set:
+        - player_name: salah
+    - action: action_provide_general_infor
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
+
+- story: user give a name 3
+  steps:
+    - intent: nlu_fallback
+    - slot_was_set:
+        - manager_name: klopp
+    - action: action_provide_general_infor
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
+
+- story: user give a name 4
+  steps:
+    - intent: nlu_fallback
+    - slot_was_set:
+        - club_name: liverpool
+    - action: action_provide_general_infor
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
 
 - story: which team do that player play for
   steps:
     - intent: ask_player_team
     - action: action_provide_player_team
+    - intent: ask_about_a_name
+    - action: action_provide_player_team
 
 - story: how many goals scored
   steps:
+    - intent: ask_player_goalscored
+    - action: action_provide_player_goalscored
+
+- story: how many goals scored 2
+  steps:
+    - intent: ask_player_goalscored
+    - action: action_provide_player_goalscored
+    - intent: ask_about_a_name
+    - action: action_provide_player_goalscored
+
+- story: how many goals scored 3
+  steps:
+    - intent: ask_about_a_name
+    - slot_was_set:
+        - player_name: pogba
+    - action: action_provide_general_infor
     - intent: ask_player_goalscored
     - action: action_provide_player_goalscored
 
@@ -21,8 +68,38 @@ stories:
     - intent: ask_player_assist
     - action: action_provide_player_assist
 
+- story: how many assists 2
+  steps:
+    - intent: ask_player_assist
+    - action: action_provide_player_assist
+    - intent: ask_about_a_name
+    - action: action_provide_player_assist
+
+- story: how many assists 3
+  steps:
+    - intent: ask_about_a_name
+    - slot_was_set:
+        - player_name: pogba
+    - action: action_provide_general_infor
+    - intent: ask_player_assist
+    - action: action_provide_player_assist
+
 - story: how many clean sheets
   steps:
+    - intent: ask_player_cleansheet
+    - action: action_provide_player_cleansheet
+
+- story: how many clean sheets 2
+  steps:
+    - intent: ask_player_cleansheet
+    - action: action_provide_player_cleansheet
+    - intent: ask_about_a_name
+    - action: action_provide_player_cleansheet
+
+- story: how many clean sheets 3
+  steps:
+    - intent: ask_about_a_name
+    - action: action_provide_general_infor
     - intent: ask_player_cleansheet
     - action: action_provide_player_cleansheet
 
@@ -31,20 +108,15 @@ stories:
     - intent: ask_manager_team
     - action: action_provide_manager_team
 
-- story: the next match of the team
-  steps:
-    - intent: ask_team_next_match
-    - action: action_provide_team_next_match
-
 - story: what is the manager of the team
   steps:
     - intent: ask_team_manager
     - action: action_provide_team_manager
   
-- story: team ranking 
+- story: teams ranking
   steps: 
-    - intent: ask_team_ranking
-    - action: action_provide_team_ranking
+    - intent: ask_ranking
+    - action: action_provide_ranking
 
 - story: schedule 
   steps:
@@ -55,6 +127,34 @@ stories:
   steps:
     - intent: ask_league_result
     - action: action_provide_league_result
+
+- story: schedule or result 1
+  steps:
+    - intent: ask_schedule
+    - action: action_provide_schedule
+    - intent: deny
+    - action: utter_response_deny
+
+- story: schedule or result 2
+  steps:
+    - intent: ask_schedule
+    - action: action_provide_schedule
+    - intent: affirm
+    - action: action_provide_league_result
+
+- story: result or schedule 1
+  steps:
+    - intent: ask_league_result
+    - action: action_provide_league_result
+    - intent: deny
+    - action: utter_response_deny
+
+- story: result or schedule 2
+  steps:
+    - intent: ask_league_result
+    - action: action_provide_league_result
+    - intent: affirm
+    - action: action_provide_schedule
 
 - story: top scorer
   steps:
@@ -71,12 +171,13 @@ stories:
     - intent: ask_league_topgk
     - action: action_provide_topgk_list
 
-- story: standings
-  steps:
-    - intent: ask_league_standings
-    - action: action_provide_standings_table
-
-- story: spectacular match 
+- story: specific match
   steps:
     - intent: ask_about_match
     - action: action_provide_match_infor
+
+- story: fallback
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+

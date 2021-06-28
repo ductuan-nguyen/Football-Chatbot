@@ -27,8 +27,6 @@ intents:
     use_entities: true
 - ask_team_next_match:
     use_entities: true
-- ask_team_ranking:
-    use_entities: true
 - ask_schedule:
     use_entities: true
 - ask_player_team:
@@ -41,7 +39,7 @@ intents:
     use_entities: true
 - ask_league_result:
     use_entities: true
-- ask_league_standings:
+- ask_ranking:
     use_entities: true
 - ask_league_topassist:
     use_entities: true
@@ -50,6 +48,12 @@ intents:
 - ask_league_topscorer:
     use_entities: true
 - ask_about_match:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
     use_entities: true
 entities:
 - club_name
@@ -85,15 +89,27 @@ responses:
   - text: quá khen :v
   - text: ngại quá, không dám :v
   utter_show_name:
-  - text: Tôi tên là eplbot
+  - text: Tôi tên là Skillzy.
   utter_sorry:
   - text: Tôi xin lôĩ nhé =(((
   - text: xin lỗi nhá
   utter_noworry:
   - text: Tôi luôn sẵn lòng giúp đỡ bạn bất cứ lúc nào ^^
   utter_show_ability:
-  - text: Tôi có thể trả lời các câu hỏi về ngoại hạng anh mùa giải 2020-2021 như bảng xếp hạng, lịch thi đấu, ... bằng tiếng Việt
-  - text: Gì chứ liên quan đến ngoại hạng anh cứ hỏi tôi :v. Tôi luôn cập nhật thông tin mới nhất về NHA 2020-2021
+  - text: |-
+      Bạn có thể hỏi tôi về giải NHA:
+      1. Cầu thủ, HLV, CLB(nhập tên cần hỏi)
+      2. Số bàn thắng, kiến tạo, số trận giữ sạch lưới của 1 cầu thủ 
+      3. Top cầu thủ ghi bàn/kiến tạo nhiều nhất, thủ môn xuất sắc nhất
+      4. Lịch thi đấu, kết quả các vòng đấu
+      5. Bảng xếp hạng/xếp hạng 1 clb cụ thể
+      6. Hỏi về 1 trận đấu cụ thể
+  utter_ask_specific_name:
+  - text: Mình biết nhiều hơn 1 cầu thủ có tên này. Bạn có thể nói rõ tên hơn không?
+  utter_not_know:
+  - text: Xin lỗi, hiện tại tôi không biết về thông tin này :(
+  utter_response_deny:
+  - text: Oke bạn. Bạn có thể hỏi tôi về các thông tin khác nhé.
   utter_fallback:
   - text: Xin lỗi, tôi không hiểu ý của bạn.
 actions:
@@ -106,10 +122,9 @@ actions:
 - action_provide_player_goalscored
 - action_provide_player_team
 - action_provide_schedule
-- action_provide_standings_table
 - action_provide_team_manager
 - action_provide_team_next_match
-- action_provide_team_ranking
+- action_provide_ranking
 - action_provide_topassist_list
 - action_provide_topgk_list
 - action_provide_topscorer_list

@@ -5,6 +5,7 @@ rules:
     steps:
       - intent: greet
       - action: utter_greet
+      - action: utter_show_ability
 
   - rule: goodbye
     steps:
@@ -30,8 +31,19 @@ rules:
     steps:
       - intent: ask_name
       - action: utter_show_name
+      - action: utter_show_ability
 
   - rule: show ability
     steps:
       - intent: ask_ability
       - action: utter_show_ability
+
+  - rule: show match infor
+    steps:
+      - intent: ask_about_match
+      - action: action_provide_match_infor
+
+  - rule: the next match of the team
+    steps:
+      - intent: ask_team_next_match
+      - action: action_provide_team_next_match
